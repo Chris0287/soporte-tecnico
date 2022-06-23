@@ -26,8 +26,9 @@ body {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
+    /* align-content: space-around;*/
+    align-items: flex-end;
+    padding: 5px;
     /* text-align: right;
     text-align-last: justify;
     text-justify: distribute; */
