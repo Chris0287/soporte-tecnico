@@ -2,8 +2,11 @@ body {
     background: #bbbaab;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
 }
 
+
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -27,27 +30,29 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     /* align-content: space-around;*/
-    align-items: flex-end;
+    align-items: center;
     padding: 5px;
     /* text-align: right;
     text-align-last: justify;
     text-justify: distribute; */
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #logo {
     display: flex;
     position: relative;
-    width: fit-content;
     /* background: #bbbaab; */
-    background-image: url('img/code1.jpg');
+    background-image: url('img/logochris1.png');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
     object-fit: contain;
-    float: right;
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 195px;
     border-radius: 20px;
+    box-sizing: border-box;
+
 }
 
 .carousel .carousel-item {
@@ -166,4 +171,36 @@ body {
 
 .contact li i:hover {
     color: #ffffff;
+}
+
+
+/*#flex-container*/ {
+ /*       background-repeat: no-repeat;*/
+    background: rgba(255, 255, 255, 0.3);
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: cover;*/
+    margin: 5px;
+    padding: 30px;
+    width: 200px;
+    height: 500px;
+    /*object-fit: cover;*/
+}
+
+#banner {
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: fit-content;
+    position: relative;
+        /*background: rgba(255, 255, 255, 0.3);*/
+    /*background-image: url('img/banner.png');*/
+    background-position: center;
+    margin: 5px;
+    padding: 30px;
+    width: 300px;
+    height: 500px;
 }
